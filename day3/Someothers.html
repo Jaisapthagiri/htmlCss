@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeOthers</title>
+    <link rel="stylesheet" href="Someothers.css">
+</head>
+
+<body>
+
+    <input type="file">
+    <br>
+
+    <!-- radio -->
+
+    <label>Gender:</label>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <br>
+
+    <form>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com" required>
+        <input type="submit">
+    </form>
+
+    <br>
+
+    <input type="datetime-local">
+    <input type="week">
+
+    <!-- checkbox -->
+
+    <!-- <h1>&#x1F600;</h1> -->
+
+    <label>Skills:</label>
+
+    <input type="checkbox" id="html" name="skills" value="html">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="css">
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="js" name="skills" value="js">
+    <label for="js">JavaScript</label>
+
+    <br>
+
+    <input type="search">
+    <input type="tel" disabled>
+
+    <!-- Video -->
+    <!-- used to play videos -->
+
+    <video src="" alt="this is the anime video" autoplay loop controls poster="ben.png" class="video1">
+    </video>
+
+    <br>
+
+    <!-- Audio -->
+    <!-- used to play audios -->
+
+    <audio src="" alt="this is the anime video" muted controls class="audio1">
+    </audio>
+
+    <br>
+
+    <!-- Drag -->
+    <!-- Used to drag from one place to another -->
+
+    <img src="ben.png" alt="Ben imgs" class="ben-image" draggable="true">
+
+    <br>
+
+    <!-- Drop -->
+    <!-- Used to drop the gragged one -->
+    <!-- dropzone="true" ==> it is depreceated and we can use it by js -->
+
+    <div class="drop-zone" dropzone="true">
+
+    </div>
+
+    <br>
+
+    <!-- Plug-ins -->
+
+    <!-- 
+    has fallback content
+    has opening and closing tag
+    -->
+
+    <object data="ben.png" class="ben-image" type="image/png">
+        Your browser does not support PDFs
+    </object>
+
+    <br>
+
+    <!-- 
+    has no fallback content
+    has self closing
+    -->
+
+    <embed data="ben.png" type="image/png">
+    Your browser does not support PDFs
+    </embed>
+
+    <br>
+
+    <!-- Graphics -->
+
+    <div class="box-img">Box</div>
+    <div class="circle-img">Circle</div>
+
+    <br>
+
+    <!-- SVG -->
+
+    <svg width="200px" height="200px">
+        <rect x="50px" y="50px" width="100px" height="100px" fill="organge" />
+    </svg>
+
+    <br>
+
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="80" fill="blue" />
+
+        <text x="100" y="110" fill="white" font-size="20">
+            Hello
+        </text>
+    </svg>
+
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+
+
+
+    <!-- <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "black";
+        ctx.fillRect(50, 50, 150, 100);
+    </script> -->
+
+</body>
+
+</html>
