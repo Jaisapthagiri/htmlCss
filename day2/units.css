@@ -1,0 +1,30 @@
+* {
+    scrollbar-width: none;
+}
+
+.cls1 {
+    font-size: 1em;
+    height: 10vh;
+    border: solid 2px;
+}
+
+.cls2 {
+    font-size: 3vw;
+}
+
+
+.cls3 {
+    font-size: 1in;
+}
+
+.cls4 {
+    font-size: 96px;
+}
+
+.cls5 {
+    font-size: 2.4cm;
+}
+
+.cls6 {
+    font-size: 3vw;
+}

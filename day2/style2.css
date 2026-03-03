@@ -1,0 +1,22 @@
+*{
+    color: white;
+}
+
+.block{
+    display: block;
+    background-color: rgb(113, 220, 184);
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.box{
+    display: inline;
+    background-color: black;
+    /* width: 100vw; */
+}
+
+.inlblc{
+    display: inline-block;
+    background-color: orange;
+    /* width: 200px; */
+}

@@ -1,0 +1,23 @@
+.asdf1 {
+    width: 400px;
+    height: auto;
+    background-color: blue;
+    margin-bottom: 30px;
+    position: relative;
+    left: 500px;
+}
+
+.asdf2 {
+    background-color: rgb(73, 187, 28);
+    position: absolute;
+    left: 350px;
+    z-index: 0;
+}
+
+.asdf3 {
+    width: 400px;
+    height: auto;
+    background-color: rgb(228, 228, 65);
+    z-index: 1000;
+    position: relative;
+}
