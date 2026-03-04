@@ -7,7 +7,6 @@
 
 
 .container {
-    /* position: fixed; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
