@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    overflow: hidden;
+}
+
+.inner-part-cstm {
+    grid-template-rows: 0.5fr 0.5fr 8fr;
+}
+
+.top-cstm-cls {
+    grid-template-columns: 1fr 6fr;
+}
+
+.resume-wrapper{
+    width:50%;
+    margin:auto;
+}
+
+.inner-part-cstm p{
+    font-size: 12px;
+}
+
+.mid-cls {
+    grid-template-columns: 1fr 1fr;
+    background-color: aliceblue;
+}
+
+.bot-cls{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-1-cstm{
+    grid-template-rows:0.5fr 3fr;
+}
+
+.paras{
+    font-size: 8px;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+li{
+    font-size: 10px;
+    margin: 0;
+}
+
+.main-projects{
+    font-size: 13px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.col-2-cstm{
+    grid-template-rows:auto auto auto auto auto;
+    gap: 8px;
+}
+
+.skils{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+}
+
+.skils p{
+    text-align: center;
+    background-color: gold;
+    border-radius: 8px;
+}
+
+.lang-cls{
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sft-skil-cls{
+    display: grid;
+    grid-template-columns: repeat(3,90px);
+}
+
+.sft-skil-cls p{
+    border-radius: 8px;
+    padding: 2px;
+    text-align: center;
+    background-color: gold;
+}
+
+.cls-header{
+    color: gold;
+}
+
+.cls-links h4{
+    font-size: 12px;
+}
+
+@media (max-width:768px){
+    .bot-cls{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        overflow: auto;
+    }
+}
+
+.asdf{
+    align-items: center;
+}
