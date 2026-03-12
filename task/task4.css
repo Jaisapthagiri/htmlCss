@@ -32,7 +32,6 @@
 .nav-bar {
     display: flex;
     background-color: white;
-    /* padding: 10px; */
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -64,11 +63,14 @@
 .brand {
     display: flex;
     gap: 15px;
+    padding: 10px;
 }
 
 .brand-name {
-    margin-left: 30px;
-    font-size: 40px;
+    font-size: 24px;
+    color: rgb(33, 218, 33);
+    font-family: sans-serif;
+    font-weight: 600;
 }
 
 .navs-links {
@@ -100,27 +102,30 @@ li {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    padding: 40px;
+    top: 30%;
+    left: 5%;
+    font-size: 20px;
     color: white;
     gap: 20px;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .main-img-content h1 {
+    left: 8%;
     width: 100%;
     font-family: sans-serif;
+    font-size: 60px;
+    font-weight: 600;
 }
 
 .main-img-content button {
     font-family: sans-serif;
     background-color: green;
     border-radius: 30px;
-    width: 250px;
+    width: 150px;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    border: none;
 }
 
 .main-img-content p {
@@ -138,7 +143,7 @@ li {
     position: absolute;
     top: 50%;
     left: 100%;
-    transform: translate(700px, -30%);
+    transform: translate(650px, -10%);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -163,6 +168,10 @@ li {
     padding: 75px;
 }
 
+.nav-nav {
+    display: none;
+}
+
 .inner-dis {
     display: flex;
     flex-direction: column;
@@ -171,7 +180,8 @@ li {
 
 .inner-dis-logos {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
 .inner-dis-texts {
@@ -182,9 +192,10 @@ li {
 
 
 .about {
+    padding: 2px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(189, 243, 243);
+    background-color: rgb(209, 222, 222);
 }
 
 .about-img {
@@ -270,7 +281,7 @@ li {
 
 .ima-bord {
     border-radius: 18px;
-    box-shadow: 0 0 3px 3px grey;
+    box-shadow: 0 0 1px 1px rgb(237, 229, 229);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -302,25 +313,64 @@ li {
     padding: 40px;
 }
 
+.service-h1 {
+    padding: 30px;
+}
+
+.ima-content {
+    text-align: start;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.ima-content p {
+    text-align: start;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(62, 59, 59);
+}
+
+.read-me-cont h3{
+    font-size: 12px;
+}
+
 .read-me-cont {
+    display: flex;
     margin-top: 20px;
     display: flex;
+    align-items: center;
     text-align: center;
     color: rgb(23, 187, 23);
+    gap: 3px;
+}
+
+.qual{
+    font-size: 16px;
+    color: rgb(106, 103, 103);
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.serv{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
 }
 
 .img-ctnt-text {
     padding: 5px;
+
 }
 
 .img-ctnt-text h4 {
-    font-size: 30px;
+    font-size: 18px;
+    color: green;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
-.img-ctnt-text p {
-    font-size: 16px;
-    color: rgb(68, 66, 66);
-    font-family: sans-serif;
+.img-ctnt-text h3 {
+    font-size: 18px;
 }
 
 .wrk-prgs {
@@ -334,7 +384,7 @@ li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .work-prgs-img {
@@ -346,6 +396,7 @@ li {
 .wrk-prgs-inner-cont {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .asdf {
@@ -363,6 +414,7 @@ li {
 .prj-links {
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -380,11 +432,15 @@ li {
     text-align: center;
 }
 
+.projects-h1 h3 {
+    font-size: 16px;
+}
+
 .free-quote {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
+    background-color: rgb(216, 222, 222);
 }
 
 .free-quote-img {
@@ -393,27 +449,30 @@ li {
 
 .free-quote-text {
     flex: 1;
-    padding: 60px;
+    padding: 20px;
 }
 
 .free-quote-text p {
-    color: #414040;
+    color: #635e5e;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: sans-serif;
 }
 
 .free-quo-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 50px;
 }
 
 .form-1 {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     gap: 20px;
 }
 
 .form-1 input {
+    display: flex;
     border-radius: 20px;
     padding: 20px;
     width: 50%;
@@ -429,9 +488,10 @@ li {
     padding: 20px;
     width: 20%;
     border-radius: 50px;
-    background-color: green;
+    background-color: rgb(29, 218, 29);
     font-size: 20px;
     color: white;
+    border: none;
 }
 
 .team {
@@ -457,14 +517,15 @@ li {
     width: 400px;
     height: 450px;
     position: relative;
-    box-shadow: 0 0 10px 0 black;
+    background-color: rgb(242, 236, 236);
+    border-radius: 20px 0 0 0;
 }
 
 .img-per-link {
     display: flex;
     flex-direction: column;
     position: absolute;
-    transform: translate(350px, 200px);
+    transform: translate(330px, 160px);
 }
 
 .img-links {
@@ -473,7 +534,6 @@ li {
 }
 
 .persons-imgs {
-    padding: 5px;
     width: 80%;
     height: 350px;
     border-radius: 20px 50px 0 0;
@@ -530,24 +590,22 @@ li {
 }
 
 .content-test {
-    padding: 20px;
+    padding: 10px;
     width: 60%;
     height: 20%;
     margin: auto;
-    background-color: rgb(119, 126, 119);
+    background-color: rgb(238, 244, 238);
     border-radius: 20px;
     text-align: center;
 }
 
 .test-text {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    padding: 10px;
 }
 
 .foot {
-    margin-top: 20px;
-    background-color: rgb(53, 53, 229);
+    margin-top: 40px;
+    background-color: rgb(9, 9, 90);
     padding: 100px 100px 10px 100px;
 }
 
@@ -555,6 +613,7 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding: 30px;
 }
 
 .foot-headers {
@@ -591,7 +650,7 @@ li {
     width: 250px;
     height: 150px;
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(3, 100px);
     justify-content: space-between;
     padding: 10px;
 }
@@ -614,11 +673,41 @@ li {
     padding: 20px;
 }
 
-.bottom-line h1 {
+.bottom-line {
     font-size: 20px;
 }
 
+.services-h1 h3 {
+    font-size: 20px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.mail-input{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signup-btn{
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: absolute;
+    transform: translate(-95px,1px);
+    background-color: green;
+    font-size: 15px;
+    width: 90px;
+    border: none;
+    color: white;
+}
+
 @media(max-width:768px) {
+
+    .nav-nav {
+        display: none;
+    }
 
     .nav-bar {
         overflow-x: auto;
@@ -626,8 +715,22 @@ li {
         align-items: center;
     }
 
+    .asdfp{
+        font-size: 14px;
+    }
+
     .opti {
         display: none;
+    }
+
+    .images-3 {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-80px, -30%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .top-bar {
@@ -639,6 +742,7 @@ li {
     }
 
     .about {
+        padding: 2px;
         grid-template-columns: 1fr;
     }
 
@@ -646,6 +750,11 @@ li {
         display: grid;
         grid-template-columns: repeat(2, 200px);
         gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .read-me-cont {
+        text-align: center;
     }
 
     .content-logo {
@@ -660,10 +769,6 @@ li {
     .service-prjs {
         display: flex;
         flex-direction: column;
-    }
-
-    .images-3 {
-        display: none;
     }
 
     .service-prjs {
@@ -696,7 +801,54 @@ li {
         display: none;
     }
 
-    .nav-bar {
+    .nav-nav{
+        display: inline;
+        padding: 10px;
+    }
+
+    .main-img-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .main-img-content p {
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .images-3 {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-80px, -30%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inner-dis-texts h1 {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .inner-dis-texts h3 {
+        font-size: 16px;
+        font-family: sans-serif;
+        color: rgb(79, 75, 75);
+        font-weight: 400;
+    }
+
+    .details {
+        padding: 60px 0px 0px 20px;
+    }
+
+    .brand-name {
+        padding: 10px 0 10px 0;
+    }
+
+    .navs ul,
+    .contact-nav {
         display: none;
     }
 
@@ -706,15 +858,14 @@ li {
         gap: 20px;
     }
 
-    .images-3 {
-        display: none;
-    }
-
-    .img-cls {
-        position: static;
+    .read-me-cont {
+        align-items: center;
+        text-align: center;
+        gap: 5px;
     }
 
     .about {
+        padding: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -722,30 +873,58 @@ li {
     .about-text {
         display: flex;
         flex-wrap: wrap;
-        background-color: aqua;
+        background-color: rgb(209, 222, 222);
         margin: 0;
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .abt {
+        margin-top: 2px;
+    }
+
+    .abt3,
+    .abt-pts {
+        color: rgb(93, 89, 89);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .abt-pts-pts {
+        margin-top: 5px;
+    }
+
+    .abt-btn {
+        width: 200px;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 600;
     }
 
     .service {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        padding: 25px;
+    }
+
+    .ser-header-3 {
+        font-size: 16px;
+        line-height: 2;
     }
 
     .ser-header {
-        font-size: 10px;
+        font-size: 24px;
         display: flex;
         flex-wrap: wrap;
-        width: 200px;
-        margin: auto;
+        width: 300px;
     }
 
     .serv-images {
         display: grid;
-        grid-template-columns: repeat(1, 150px);
-        gap: 20px;
+        grid-template-columns: repeat(1, 350px);
         font-size: 10px;
+        width: 100%;
     }
 
     .ima-bord {
@@ -771,7 +950,7 @@ li {
         width: 100px;
         height: 100px;
         border-radius: 50px;
-        transform: translate(-60px, -60px);
+        transform: translate(-150px, -60px);
     }
 
     .projects {
@@ -787,40 +966,55 @@ li {
     .service-prjs {
         display: flex;
         flex-direction: column;
+        padding: 25px;
     }
 
     .serv-images1 {
-        width: 300px;
+        width: 380px;
         height: 250px;
         border-radius: 15px;
-        margin-left: 8px;
+        background-color: aquamarine;
     }
 
     .wrk-prgs-inner {
         display: flex;
-        flex-direction: column;
+        gap: 20px;
+    }
+
+    .wrk-prgs-inner-cont {
         gap: 10px;
+    }
+
+    .free-quo-form {
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
     }
 
     .free-quote {
         padding: 5px;
         margin-top: 20px;
         display: flex;
-        flex-direction: column;
     }
 
     .free-quote-img {
         height: 50px;
     }
 
+    .form-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
     .form-1 input {
         padding: 20px;
+        width: 100%;
     }
 
     .form-btn {
-        padding: 20px;
-        font-size: 10px;
-        width: 70px;
+        padding: 15px;
+        font-size: 16px;
+        width: 140px;
     }
 
     .team-imgs {
@@ -840,6 +1034,8 @@ li {
 
     .foot-cls1 {
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .foot-cls2 {
@@ -849,9 +1045,10 @@ li {
     }
 
     .bottom-line {
-        font-size: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: none;
+    }
+
+    .foot-news input {
+        width: 100%;
     }
 }
