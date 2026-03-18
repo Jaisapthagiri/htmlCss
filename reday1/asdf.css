@@ -1,0 +1,76 @@
+/* .input-form{
+    position: relative;
+}
+
+.input-form input{
+    padding: 10px;
+}
+
+.input-form label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.input-form input:focus + label{
+    top: 0;
+    font-size: 16px;
+    color: blue;
+    background-color: white;
+    padding: 2px;
+} */
+
+/* optgroup[label="Frontend"] {
+    text-align: center;
+} */
+
+/* p{
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+q {
+    quotes: "«" "»";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+} */
+
+/* .input-form{
+    position: relative;
+}
+
+.input-form input{
+    padding: 15px;
+}
+
+.input-form label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.input-form input:focus + label{
+    top: 0px;
+    background-color: white;
+    padding: 2px;
+} */
+
+.asdf {
+    color: black;
+}
+
+.note {
+    display: inline;
+}
+
+.lkjh {
+    color: rgb(69, 67, 67);
+}

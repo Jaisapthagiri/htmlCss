@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .input-form {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-form input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        .input-form label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            padding: 2px;
+            transition: 0.3s;
+        }
+
+        input:focus+label,
+        input:valid+label {
+            top: 0;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="input-form">
+        <input id="name" type="text" name="userName" pattern="[A-Za-z]{3,}" required>
+        <label for="name">Full Name</label>
+    </div>
+
+</body>
+
+</html>

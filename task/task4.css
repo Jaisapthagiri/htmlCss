@@ -683,12 +683,18 @@ li {
 
 .input-box{
     position: relative;
+    
+}
+
+.input-texts::placeholder{
+    top: 20px;
 }
 
 .mail-input{
     padding: 20px;
     border-radius: 10px;
 }
+
 
 .signup-btn{
     padding: 15px;
@@ -1051,4 +1057,29 @@ li {
     .foot-news input {
         width: 100%;
     }
+}
+
+.input-formss{
+    position: relative;
+    width: 250px;
+}
+
+.input-formss input{
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.input-formss label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.input-formss input:focus + label{
+    top: 10%;
+    font-size: 12px;
+    color: black;
 }
