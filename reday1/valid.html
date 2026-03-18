@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form</title>
+    <link rel="stylesheet" href="valid.css">
+</head>
+
+<body>
+
+    <div class="form-practice">
+        <form action="/submit" method="post" autocomplete="on">
+
+            <div class="outer-container">
+
+                <h1>Registration Form</h1>
+
+                <!-- PERSONAL DETAILS -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <div class="input-form">
+                        <input id="name" type="text" name="userName" pattern="[A-Za-z]{3,}" required>
+                        <label for="name">Full Name</label>
+                    </div>
+
+                    <div class="input-form">
+                        <input id="email" type="email" name="email" multiple required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-form">
+                        <input id="phone" type="tel" name="phone" pattern="[6-9][0-9]{9}" required>
+                        <label for="phone">Phone</label>
+                    </div>
+
+                    <div class="input-form">
+                        <input id="password" type="password" name="password" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                            required>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="input-form">
+                        <input id="confirm" type="password" name="confirmPassword" minlength="8" required>
+                        <label for="confirm">Confirm Password</label>
+                    </div>
+
+                </fieldset>
+
+                <!-- ADDRESS -->
+                <fieldset>
+                    <legend>Address</legend>
+
+                    <div class="text-area-form">
+                        <textarea id="address" name="address" minlength="20" required></textarea>
+                    </div>
+
+                    <div class="input-form">
+                        <input id="pincode" type="text" name="pincode" pattern="[0-9]{6}" required>
+                        <label for="pincode">Pincode</label>
+                    </div>
+
+                    <input type="hidden" name="user_id" value="101">
+
+                </fieldset>
+
+                <!-- PRODUCT -->
+                <fieldset>
+                    <legend>Product Selection</legend>
+
+                    <select name="product" multiple size="1" required>
+                        <option value="" disabled selected>Select Product</option>
+
+                        <optgroup label="Electronics">
+                            <option value="computer">Computer</option>
+                            <option value="monitor">Monitor</option>
+                            <option value="powerbank">Powerbank</option>
+                        </optgroup>
+
+                        <optgroup label="Furniture">
+                            <option value="desk">Desk</option>
+                            <option value="chair">Chair</option>
+                        </optgroup>
+
+                    </select>
+
+                </fieldset>
+
+                <!-- PREFERENCES -->
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <div class="checks">
+                        <label><input type="checkbox" name="newsletter" value="yes"> Newsletter</label>
+                        <label><input type="checkbox" name="offers" value="yes"> Offers</label>
+                        <label><input type="checkbox" name="updates" value="yes"> Updates</label>
+                    </div>
+
+                    <div class="radios">
+                        <label><input type="radio" name="payment" value="upi" required>UPI</label>
+                        <label><input type="radio" name="payment" value="cod" required>COD</label>
+                    </div>
+
+                </fieldset>
+
+                <!-- FILE -->
+                <fieldset>
+                    <legend>Upload</legend>
+                    <input type="file" name="files" accept="image/*" multiple>
+                </fieldset>
+
+                <!-- DATE & TIME -->
+                <fieldset>
+                    <legend>Delivery</legend>
+
+                    <label>Date:
+                        <input type="date" name="date" min="2026-03-17" required>
+                    </label>
+
+                    <label>Time:
+                        <input type="time" name="time" required>
+                    </label>
+
+                </fieldset>
+
+                <!-- RANGE + OUTPUT -->
+                <fieldset>
+                    <legend>Quantity</legend>
+
+                    <input type="range" min="1" max="10" value="5">
+                    <output>5</output>
+
+                </fieldset>
+
+                <!-- PROGRESS + METER -->
+                <fieldset>
+                    <legend>Status</legend>
+
+                    <label>Form Progress:</label>
+                    <progress value="70" max="100"></progress>
+
+                    <label>Password Strength:</label>
+                    <meter value="0.6"></meter>
+
+                </fieldset>
+
+                <!-- BUTTONS -->
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button disabled>Disabled</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

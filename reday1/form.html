@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-practice">
+        <form action="_blank" method="post" autocomplete="off">
+            <div class="outer-container">
+                <div class="header-detail">
+                    <h1>Reg Form</h1>
+                </div>
+                <!-- Personal Details -->
+                <div class="input-form">
+                    <input type="text" pattern="[A-Za-z]{3,}" minlength="3" id="userName" required>
+                    <label for="userName">Name</label>
+                </div>
+                <div class="input-form">
+                    <input type="email" minlength="3" id="Email" required multiple>
+                    <label for="Email">Email</label>
+                </div>
+                <div class="input-form">
+                    <input type="tel" pattern="[0-9]{10}" id="Phone" required>
+                    <label for="Phone">Phone</label>
+                </div>
+                <div class="input-form">
+                    <input type="password" minlength="8" pattern="[A-Z]{1}[A-Za-z0-9]" id="Password" required>
+                    <label for="Password">Password</label>
+                </div>
+                <div class="input-form">
+                    <input type="password" minlength="8" id="ConfirmPassword" required>
+                    <label for="ConfirmPassword">Confirm Password</label>
+                </div>
+                <!-- Address Selection -->
+                <div class="text-area-form">
+                    <textarea type="text" minlength="20" id="Address" required></textarea>
+                    <label for="Address">Address</label>
+                </div>
+                <div class="input-form">
+                    <input type="number" min="6" max="6" id="pincode" required>
+                    <label for="pincode">Pincode</label>
+                </div>
+                <div class="input-form">
+                    <input type="text" readonly name="user_id" value="104">
+                    <input type="text" disabled name="user_id" value="104">
+                </div>
+                <!-- Product Selection -->
+                <div class="prod-sel">
+                    <div class="select-prods">
+                        <label for="select-product">Select Product</label>
+                        <select id="select-product" id="select-product" size="1">
+                            <option value="computer" disabled>Computer</option>
+                            <optgroup label="Electronic">
+                                <option value="computer" disabled>Computer</option>
+                                <option value="monitor">Monitor</option>
+                                <option value="powerbank">Powerbank</option>
+                            </optgroup>
+                            <optgroup label="Furniture">
+                                <option value="desk">Desk</option>
+                                <option value="chair">Chair</option> 
+                                <option value="chair" disabled>Chair</option> 
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <!-- preference -->
+                <!-- checkbox -->
+                <div class="preference">
+                    <div class="checks">
+                        <div class="perf-checkBox">
+                            <label for="newsletter">Newsletter</label>
+                            <input id="newsletter" type="checkbox">
+                        </div>
+                        <div class="perf-checkBox">
+                            <label for="offers">Offers</label>
+                            <input id="offers" type="checkbox">
+                        </div>
+                        <div class="perf-checkBox">
+                            <label for="updates">Updates</label>
+                            <input id="updates" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <!--radio buttons  -->
+                <div class="radios">
+                    <label for="gender" style="font-weight: 600;">Gender</label>
+                    <div class="radio-icons">
+                        <label for="upi">UPI</label>
+                        <input type="radio" value="upi" id="upi" name="payment">
+                    </div>
+                    <div class="radio-icons">
+                        <label for="cod">COD</label>
+                        <input type="radio" value="cod" id="cod" name="payment">
+                    </div>
+                </div>
+                <!-- file -->
+                <div class="files-upload">
+                    <input type="file" accept="image/*" multiple>
+                </div>
+                <!-- datetime -->
+                <div class="delivery-date">
+                    <div class="dels">
+                        <label for="delivery-date">Delivery Date</label>
+                        <input type="datetime-local" id="delivery-date" min="2026-03-17T00:00" max="2026-03-19T00:00">
+                        <input type="datetime" id="delivery-date" min="2026-03-17T00:00" max="2026-03-19T00:00">
+                        <input type="date" id="delivery-date" min="2026-03-17T00:00" max="2026-03-19T00:00">
+                    </div>
+                </div>
+                <!-- buttons -->
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button disabled>some</button>
+                    <button type="button">some</button>
+                    <button>some</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

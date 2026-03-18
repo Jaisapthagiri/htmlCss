@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+.form-practice {
+    padding: 30px;
+}
+
+.outer-container {
+    width: 500px;
+    height: 120vh;
+    padding: 20px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.header-detail {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.input-form {
+    position: relative;
+}
+
+.input-form input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.input-form label{
+    position: absolute;
+    left: 30px;
+    transform: translateY(-50%);
+    top: 40%;
+    transition: 0.3s;
+}
+
+.input-form input:focus+label,
+.input-form input:valid {
+    top: 0px;
+    background-color: white;
+    padding: 1.5px;
+}
+
+.text-area-form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.text-area-form textarea {
+    width: 100%;
+    padding: 10px;
+    min-width: 400px;
+}
+
+.text-area-form label {
+    position: absolute;
+    left: 30px;
+    transform: translateY(-50%);
+    top: 0;
+    transition: 0.3s;
+    background-color: white;
+}
+
+select{
+    width: 50%;
+    height: 40px;
+    overflow-y: auto;
+}
+
+.select-prods{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.checks{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.perf-checkBox{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.radios{
+    display: flex;
+    gap: 20px;
+}
+
+.radio-icons{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.files-upload{
+    padding: 20px;
+}
+
+.delivery-date{
+    padding: 10px;
+}
+
+.dels{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+}
+
+
