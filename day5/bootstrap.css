@@ -1,7 +1,0 @@
-#ids{
-    display: none;
-}
-
-#ids:target{
-    display: block;
-}
