@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.asdf{
+    padding: 20px;
+}
+/* 
+.input-forms{
+    position: relative;
+}
+
+.input-forms input{
+    padding: 20px;
+    width: 200px;
+}
+
+.input-forms label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input:valid + label,
+input:focus + label{
+    top: 0;
+    font-size: 12px;
+    background-color: white;
+    padding: 2px;
+}
+
+.input-forms input:invalid + label{
+    top: 0;
+}
+
+.input-forms input:invalid {
+    top: 0;
+    border: 1px solid red;
+} */
+.input-forms {
+    position: relative;
+}
+
+.input-forms input {
+    padding: 20px;
+    width: 200px;
+}
+
+.input-forms label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    transition: 0.2s;
+}
+
+.input-forms input:focus + label,
+.input-forms input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.input-forms input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
