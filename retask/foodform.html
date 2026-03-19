@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Form</title>
+    <link rel="stylesheet" href="foodform.css">
+</head>
+<body>
+    <div class="menus">
+        <form action="ordertable.css" autocomplete="off">
+            <fieldset>
+                <legend>Order Form</legend>
+                <div class="forms">
+                    <div class="input-form">
+                        <input type="text" placeholder=" " name="Name" id="name" pattern="^[A-z][a-z]{3,}$" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-form">
+                        <input type="email" placeholder=" " name="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <h2 class="asdf">Address</h2>
+                    <div class="address">
+                        <div class="input-form">
+                            <input type="text" id="lineone" name="lineone" pattern="^[a-zA-Z0-9]{10,}" placeholder=" "
+                                required>
+                            <label for="lineone">Line 1<sup>st</sup></label>
+                        </div>
+                        <div class="input-form">
+                            <input type="text" id="lineone" name="lineone" pattern="^[a-zA-Z0-9]" placeholder=" ">
+                            <label for="lineone">Line 2<sup>nd</sup></label>
+                        </div>
+                        <div class="fom">
+                            <div class="input-form">
+                                <input type="text" id="lineone" name="lineone" pattern="^[a-zA-Z]{5,}" placeholder="City"
+                                    required>
+                            </div>
+                            <div class="input-form">
+                                <input type="text" id="lineone" name="lineone" pattern="[0-9]{6}"
+                                    placeholder="Pin Code" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button href="asdf.html" type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

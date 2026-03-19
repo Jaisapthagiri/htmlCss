@@ -1,0 +1,36 @@
+.categories {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    margin: 2px;
+}
+
+.headers {
+    font-family: 800;
+    font-size: 24px;
+}
+
+li {
+    padding: 2px;
+}
+
+li:nth-child(even) {
+    color: red;
+    font-size: 18px;
+}
+
+ol li:nth-child(odd) {
+font-size: 16px;
+color: green;
+}
+
+li:hover{
+    zoom:120%;
+}

@@ -39,6 +39,7 @@ input:focus + label{
     top: 0;
     border: 1px solid red;
 } */
+ 
 .input-forms {
     position: relative;
 }

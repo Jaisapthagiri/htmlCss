@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="inps.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <td rowspan="2">Sr.<br>No</td>
+                <td rowspan="2">Details of the<br>Services<br>Provided</td>
+                <td rowspan="2">Qty</td>
+                <td colspan="2">Services<br>Period</td>
+                <td colspan="4">Services Performance Details</td>
+            </tr>
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>S.No</td>
+                <td>Service<br>ID No:</td>
+                <td>Gap in <br>Service (in <br> days)</td>
+                <td>Overall Performance<br>Remarks (Satisfactory/un-<br>satisfactory)</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4">1</td>
+                <td rowspan="4"></td>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3"></td>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="inp-fa">
+        <input type="text" id="name" pattern="[A-Z][a-z]{3,}" name="userName" placeholder=" " required>
+        <label for="name">Name</label>
+    </div>
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+
+    <button onclick="alert('Are You Sure!')"></button>
+    <button onclick="prompt('Your Name!')"></button>
+    <button onclick="confirm('Are You Sure To Delete')"></button>
+
+</body>
+
+</html>

@@ -1,18 +1,25 @@
-.input-forms{
-    position: relative;
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
 }
 
-.input-forms input{
-    padding: 20px;
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
-.input-forms label{
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-.input-forms input:focus + label{
-    
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
 }
