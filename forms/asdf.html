@@ -26,11 +26,36 @@
         col:nth-child(3) {
             background-color: cyan;
         }
+
+        .input-form {
+            position: relative;
+        }
+
+        .input-form input {
+            padding: 20px;
+        }
+
+        .input-form label {
+            position: absolute;
+            top: 60%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        .input-form input:focus+label,
+        .input-form input:not(:placeholder-shown)+label {
+            top: 0;
+            background-color: white;
+        }
+
+        .input-form input:invalid:not(:placeholder-shown) {
+            background-color: rgb(197, 131, 131);
+        }
     </style>
 </head>
 
 <body>
-    <table>
+    <!-- <table>
         <colgroup>
             <col>
             <col>
@@ -51,7 +76,12 @@
             <td>85</td>
             <td>B+</td>
         </tr>
-    </table>
+    </table> -->
+
+    <div class="input-form">
+        <input type="text" placeholder=" " id="name" name="name" pattern="[a-z]{3,}" required>
+        <label for="name">Name</label>
+    </div>
 </body>
 
 </html>
