@@ -24,7 +24,6 @@ legend {
 .input-form {
     position: relative;
     margin-bottom: 10px;
-    margin-bottom: 30px;
 }
 
 .input-form input {
@@ -83,4 +82,8 @@ button{
     border: none;
     border-radius: 20px;
     font-weight: 600;
+}
+
+.grad{
+    background: url("./img.png");
 }
