@@ -23,3 +23,35 @@ th {
     background-color: #333;
     color: white;
 }
+
+.inps-form{
+    position: relative;
+}
+
+.inps-form input{
+    padding: 15px;
+    outline: none;
+}
+
+.inps-form label{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    padding: 2px;
+    background-color: white;
+}
+
+.inps-form input:valid{
+    outline: 1px solid green;
+}
+
+.inps-form input:focus + label,
+.inps-form input:not(:placeholder-shown)+label{
+    top: 0;
+
+}
+
+.inps-form input:invalid:not(:placeholder-shown){
+    border: 1px solid rgb(216, 140, 140);
+}
